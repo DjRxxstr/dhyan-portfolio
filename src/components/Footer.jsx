@@ -38,7 +38,7 @@ export default function Footer() {
                 </a>
 
                 <a
-                    href="https://www.linkedin.com/in/dhyanjiju/"
+                    href="https://www.instagram.com/_deejayaar_/"
                     target="_blank"
                     className="w-[50px] h-[50px] text-white hover:text-black hover:bg-white rounded-xl transition duration-200 flex items-center justify-center"
                 >

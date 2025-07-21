@@ -23,7 +23,7 @@ export default function Hero() {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915eff]'>Dhyan</span></h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            I am a Front End Developer!
+            I'm a React Developer!
           </p>
           {/* <p className={`${styles.heroSubText} text-white-100 mt-2`}>
             I am a React developer, fg gdfgdfg <br 
@@ -34,7 +34,7 @@ export default function Hero() {
             <a 
             href="#contact">
               <button
-                className="cursor-pointer w-[140px] bg-[#7645e0] text-white px-4 py-2 rounded-2xl shadow-md transition-all duration-300 hover:bg-amber-50 hover:text-[#7645e0] hover:font-semibold hover:shadow-lg"
+                className="cursor-pointer w-[140px] bg-[#7645e0] text-white px-4 py-2 rounded-2xl shadow-md transition-all duration-300 hover:bg-amber-50 hover:text-[#7645e0] hover:shadow-lg"
               >
                 Contact Me!
               </button>

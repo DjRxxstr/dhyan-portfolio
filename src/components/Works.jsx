@@ -21,12 +21,12 @@ function ProjectCard(props) {
             speed: 450
           }
         }
-        className='bg-tertiary p-3 rounded-2xl sm:w-[360px] w-full'>
+        className='border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[360px] w-full'>
         <div className='relative w-full h-[230px]'>
           <img
             src={props.image}
             alt={props.name}
-            className='w-full h-full object-center object-cover rounded-2xl' />
+            className='w-full h-full object-fill object-center rounded-2xl' />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -51,12 +51,12 @@ function ProjectCard(props) {
           </p>
         </div>
 
-        <div className='flex flex-wrap justify-between items-center mt-4'>
-          <div className='flex flex-wrap gap-0 hover:gap-6 transition-all duration-500 items-center'>
+        <div className='flex gap-4 justify-between w-full enter mt-4'>
+          <div className='flex flex-wrap gap-0 hover:gap-3 transition-all duration-500 items-center'>
             {props.tags.map((tag) => (
               <div key={tag.name} className='h-[40px] w-[40px] bg-black border-1 border-amber-50 p-1 rounded-full -ml-2'>
                 <img
-                  src={tag.icon} 
+                  src={tag.icon}  
                   alt={tag.name}/>
               </div>
             ))}
@@ -66,8 +66,8 @@ function ProjectCard(props) {
           <a
             href={props.live_link}
             target="_blank"
-            className='text-secondary hover:text-white underline decoration-2 decoration-secondary hover:decoration-white underline-offset-4 transition-all duration:300'>
-            <div className='flex flex-wrap items-center'>
+            className='flex-none text-secondary hover:text-white underline decoration-2 decoration-secondary hover:decoration-white underline-offset-4 transition-all duration:300'>
+            <div className='flex items-center'>
               <p className='mr-2'>Live Demo</p>
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 

@@ -29,7 +29,12 @@ import {
   bootstrap,
   bolt,
   beachhack,
-  fooddelivery
+  fooddelivery,
+  busbooking,
+  springboot,
+  jwt,
+  framer,
+  router
 } from "../assets";
 
 export const navLinks = [
@@ -56,7 +61,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Software Developer",
     icon: backend,
   }
 ];
@@ -90,6 +95,7 @@ const technologies = [
     name: 'NextJS',
     icon: next
   },
+
   {
     name: "HTML 5",
     icon: html,
@@ -102,16 +108,16 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
 
   {
     name: 'Bootstrap',
     icon: bootstrap
   },
   
+  {
+    name: "Framer Motion",
+    icon: framer
+  },
   
   {
     name: 'Tanstack Query',
@@ -182,7 +188,37 @@ const projects = [
     image: fooddelivery,
     source_code_link: "https://github.com/DjRxxstr/food-delivery-app",
     live_link: "https://food-delivery-app-five-alpha.vercel.app/"
-  }
+  },
+  {
+    name: "Bus Booking System",
+    description:
+      "Developed a full-stack bus booking app using React.js, Spring Boot, and MongoDB with real-time seat selection and booking. JWT-based authentication, role-based access control, and integrated payment processing. Admin dashboard for managing routes, bookings, users, and viewing real-time analytics.",
+    tags: [
+      {
+        name: "React",
+        icon: reactjs
+      },
+      {
+        name: "Springboot",
+        icon: springboot
+      },
+      {
+        name: "CSS",
+        icon: css
+      },
+      {
+        name: "MongoDB",
+        icon: mongodb
+      },
+      {
+        name: "JWT-Token",
+        icon: jwt
+      }
+    ],
+    image: busbooking,
+    source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
+    live_link: ""
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
