@@ -145,7 +145,7 @@ function Contact() {
       <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-20 overflow-hidden xl:justify-center'>
         <motion.div
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='border-b-2 border-secondary flex-1 bg-black-100 p-8 rounded-2xl'>
+          className='border-b-2 border-secondary xl:flex-1 bg-black-100 p-8 rounded-2xl'>
 
           <p className="font-bold text-white text-[20px]">Send a message</p>
 

@@ -15,7 +15,7 @@ import { textVariant } from '../utils/motion';
 function ExperienceCard({ experience, position }) {
   return (
     <motion.div
-      whileHover={{ scale: 1.03 }}
+      whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 200 }}
       className='mb-8'>
 
@@ -36,8 +36,7 @@ function ExperienceCard({ experience, position }) {
         date={experience.date}
         iconStyle={
           {
-            background: experience.iconBg,
-            pointerEvents: 'none',
+            background: experience.iconBg
           }
         }
         icon={

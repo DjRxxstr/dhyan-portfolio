@@ -46,7 +46,9 @@ function ServiceCard({ index, title, icon }) {
 function About() {
   return (
     <div className='flex xll:flex-row xll:justify-between flex-col-reverse gap-8 xll:items-start items-center'>
+
       <div className='xll:flex-1 flex flex-col items-center text-center'>
+
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -55,12 +57,10 @@ function About() {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          A web developer passionate about building smooth, responsive apps using React, Redux, and Firebase.
+          A web developer passionate about building smooth, responsive apps.
           I love coding, turning ideas into interactive experiences, and solving real-world problems through tech.
           I strive to write clean, efficient code and build solutions that are both scalable and user-friendly.
         </motion.p>
-
-
 
         <div className='mt-20 flex flex-wrap w-full gap-10 justify-center'>
 
@@ -68,8 +68,8 @@ function About() {
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
         </div>
-      </div>
 
+      </div>
 
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}>

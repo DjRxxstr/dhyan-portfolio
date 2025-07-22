@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 import { textVariant, fadeIn } from '../utils/motion';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
   return (
@@ -23,16 +24,23 @@ export default function Hero() {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915eff]'>Dhyan</span></h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            I'm a React Developer!
+            I'm a 
+            <span>
+              <Typewriter
+                words={[' React Developer', ' Web Developer']}
+                loop={0}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}/>
+            </span>
           </p>
-          {/* <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            I am a React developer, fg gdfgdfg <br 
-            className="sm:block hidden/> dfg ffgfg, fdgfvgcdf, fggg
-          </p> */}
+
           <motion.div
             className='mt-[35px] flex h-[40px]'>
-            <a 
-            href="#contact">
+            <a
+              href="#contact">
               <button
                 className="cursor-pointer w-[140px] bg-[#7645e0] text-white px-4 py-2 rounded-2xl shadow-md transition-all duration-300 hover:bg-amber-50 hover:text-[#7645e0] hover:shadow-lg"
               >

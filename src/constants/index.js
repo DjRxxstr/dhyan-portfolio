@@ -1,40 +1,32 @@
 import {
-  mobile,
-  backend,
-  creator,
+  design,
+  sdev,
   web,
-  javascript,
-  typescript,
-  html,
-  css,
+
+  bolt,
+  beachhack,
+  
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
-  tanstack,
+  git,
   firebase,
   next,
+  html,
+  css,
+  javascript,
   bootstrap,
-  bolt,
-  beachhack,
+  framer,
+  tanstack,
+
   fooddelivery,
   busbooking,
+
   springboot,
+  mongodb,
   jwt,
-  framer,
-  router
+  
 } from "../assets";
 
 export const navLinks = [
@@ -46,7 +38,8 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {id: "projects",
+  {
+    id: "projects",
     title: "Projects"
   }
 ];
@@ -58,11 +51,11 @@ const services = [
   },
   {
     title: "Web Designer",
-    icon: mobile,
+    icon: design,
   },
   {
     title: "Software Developer",
-    icon: backend,
+    icon: sdev,
   }
 ];
 
@@ -217,7 +210,7 @@ const projects = [
     ],
     image: busbooking,
     source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
-    live_link: ""
+    live_link: "https://bus-booking-system-eta.vercel.app/"
   },
 ];
 

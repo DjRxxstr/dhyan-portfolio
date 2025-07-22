@@ -16,7 +16,7 @@
   --breakpoint-smd: 800px;
   --breakpoint-xll: 1310px;
 
-  --background-hero-pattern: url('/src/assets/herobg.png');
+  --background-hero-pattern: url('/src/assets/ui/herobg.png');
 }
 
 *,
