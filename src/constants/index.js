@@ -24,7 +24,7 @@ import {
   busbooking,
 
   springboot,
-  mongodb,
+  mysql,
   jwt,
   
 } from "../assets";
@@ -185,7 +185,7 @@ const projects = [
   {
     name: "Bus Booking System",
     description:
-      "Developed a full-stack bus booking app using React.js, Spring Boot, and MongoDB with real-time seat selection and booking. JWT-based authentication, role-based access control, and integrated payment processing. Admin dashboard for managing routes, bookings, users, and viewing real-time analytics.",
+      "Developed a full-stack bus booking app using React.js, Spring Boot, and MySQL with real-time seat selection and booking. JWT-based authentication, role-based access control, and integrated payment processing. Admin dashboard for managing routes, bookings, users, and viewing real-time analytics.",
     tags: [
       {
         name: "React",
@@ -200,8 +200,8 @@ const projects = [
         icon: css
       },
       {
-        name: "MongoDB",
-        icon: mongodb
+        name: "MySQL",
+        icon: mysql
       },
       {
         name: "JWT-Token",

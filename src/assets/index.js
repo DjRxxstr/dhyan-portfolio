@@ -24,6 +24,7 @@ import bootstrap from "./tech/bootstrap.png";
 import springboot from "./tech/springboot.png";
 import jwt from "./tech/jwt.svg";
 import framer from "./tech/framer.svg";
+import mysql from "./tech/mysql.svg";
 
 
 import bolt from "./company/bolt.jpeg";
@@ -61,4 +62,5 @@ export {
   springboot,
   jwt,
   framer,
+  mysql
 };

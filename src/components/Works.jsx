@@ -58,7 +58,8 @@ function ProjectCard(props) {
               <div key={tag.name} className='h-[40px] w-[40px] bg-black border-1 border-amber-50 p-1 rounded-full -ml-2'>
                 <img
                   src={tag.icon}  
-                  alt={tag.name}/>
+                  alt={tag.name}
+                  className="p-0.5"/>
               </div>
             ))}
 
