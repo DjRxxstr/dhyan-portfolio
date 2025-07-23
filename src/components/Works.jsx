@@ -19,12 +19,12 @@ function ProjectCard(props) {
             speed: 450
           }
         }
-        className='border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[360px] w-full'>
-        <div className='relative w-full h-[230px]'>
+        className='border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[370px] w-full'>
+        <div className='rounded-2xl relative w-full h-[230px]'>
           <img
             src={props.image}
             alt={props.name}
-            className='w-full h-full object-fill object-center rounded-2xl' />
+            className='p-1 border-2 border-secondary w-full h-full object-fill object-center rounded-2xl' />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
@@ -53,7 +53,7 @@ function ProjectCard(props) {
         </div>
 
         <div className='flex gap-4 justify-between w-full enter mt-4'>
-          <div className='flex flex-wrap gap-0 hover:gap-3 transition-all duration-500 items-center'>
+          <div className='ml-2 flex flex-wrap gap-0 hover:gap-3 transition-all duration-500 items-center'>
             {props.tags.map((tag) => (
               <div key={tag.name} className='h-[40px] w-[40px] bg-black border-1 border-amber-50 p-1 rounded-full -ml-2'>
                 <img
