@@ -3,19 +3,19 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { education } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { pic } from '../assets';
 
-function ServiceCard({ index, title, icon }) {
+function ServiceCard({ index, type, name, duration, icon, details }) {
   return (
-    <Tilt className='xs:w-[200px] w-full'>
+    <Tilt className='xs:w-[333px] w-full'>
       <motion.div
         variants={
           fadeIn("right", "spring", 0.5 * index, 0.75)
         }
-        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+        className='h-full w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
 
         <div
           options={
@@ -25,18 +25,45 @@ function ServiceCard({ index, title, icon }) {
               speed: 450
             }
           }
-          className='bg-tertiary rounded-[20px] py-5 px-12 
-            min-h-[280px] flex justify-evenly items-center flex-col'>
-          <img
-            src={icon}
-            alt={title}
-            className='w-16 h-16 object-contain'
-          />
-          <h3
-            className='text-white text-[20px] font-bold 
-                            text-center'>
-            {title}
-          </h3>
+          className='bg-tertiary rounded-[20px] py-8 px-8 
+            min-h-[280px] flex items-start flex-col w-full h-full'>
+
+              <div className="green-pink-text-gradient font-extrabold text-[20px]">
+                {type}
+              </div>
+
+          <div className="flex gap-4 items-center mt-4">
+            <p
+              className='text-white text-[18px] text-left font-bold'>
+              {name}
+            </p>
+
+            <img
+              src={icon}
+              alt={name}
+              className='w-12 h-12 object-contain'
+            />
+
+          </div>
+
+          <div className='green-pink-gradient h-[2px] mt-5 w-full'></div>
+
+          <div 
+            className="green-pink-gradient font-bold text-white text-[15px] rounded-2xl py-1 px-3 mt-4">
+            {duration}
+          </div>
+
+          <div className="mt-4">
+            <ul className="text-left text-[16px] list-disc ml-4">
+              {details.map((detail) => (
+                <li 
+                  key={detail}
+                  className="mt-2">{detail}</li>
+              ))}
+            </ul>
+          </div>
+
+
         </div>
       </motion.div>
     </Tilt>
@@ -62,12 +89,16 @@ function About() {
           I strive to write clean, efficient code and build solutions that are both scalable and user-friendly.
         </motion.p>
 
-        <div className='mt-20 flex flex-wrap w-full gap-10 justify-center'>
-
-          {services.map((service, index) => (
-            <ServiceCard key={service.title} index={index} {...service} />
-          ))}
+        <div className="flex flex-col mt-20 gap-10">
+          <p className={styles.sectionSubText}>Education</p>
+          <div className='flex flex-wrap w-full gap-10 justify-center'>
+            {education.map((record, index) => (
+              <ServiceCard key={record.type} index={index} {...record} />
+            ))}
+          </div>
         </div>
+
+
 
       </div>
 

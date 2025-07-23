@@ -1,7 +1,6 @@
 import {
-  design,
-  sdev,
-  web,
+  college,
+  school,
 
   bolt,
   beachhack,
@@ -44,20 +43,29 @@ export const navLinks = [
   }
 ];
 
-const services = [
+const education = [
   {
-    title: "React Developer",
-    icon: web,
+    type: "B.Tech",
+    name: 'Christ College of Engineering',
+    duration: "2022 - Present",
+    icon: college,
+    details: [
+      "Bachelor's Degree in Computer Science and Engineering",
+      "CGPA : 8.4",
+    ],
   },
   {
-    title: "Web Designer",
-    icon: design,
+    type: "High School",
+    name: "Bharatiya Vidya Bhavan",
+    duration: "2020 - 2022",
+    icon: school,
+    details: [
+      "High School, Computer Science",
+      "Board : CBSE",
+      "Percentage : 93.6",
+    ],
   },
-  {
-    title: "Software Developer",
-    icon: sdev,
-  }
-];
+]
 
 const technologies = [
   {
@@ -214,4 +222,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { education, technologies, experiences, testimonials, projects };

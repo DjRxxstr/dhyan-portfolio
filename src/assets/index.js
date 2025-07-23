@@ -1,9 +1,8 @@
 import logo from "./logo.png";
 import pic from "./pic.png";
 
-import sdev from "./icons/sdev.png";
-import design from "./icons/design.png";
-import web from "./icons/web.png";
+import college from "./icons/college.png";
+import school from "./icons/school.png";
 
 import menu from "./ui/menu.svg";
 import close from "./ui/close.svg";
@@ -36,9 +35,6 @@ import busbooking from "./projects/project2.JPG";
 
 export {
   logo,
-  sdev,
-  design,
-  web,
   menu,
   close,
   css,
@@ -62,5 +58,7 @@ export {
   springboot,
   jwt,
   framer,
-  mysql
+  mysql,
+  college,
+  school
 };
