@@ -24,7 +24,7 @@ function ExperienceCard({ experience, position }) {
         contentStyle={
           {
             background: '#1d1836',
-            color: '#fff'
+            color: '#fff',
           }
         }
         contentArrowStyle={

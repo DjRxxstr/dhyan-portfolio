@@ -10,7 +10,7 @@
   --color-black-200: #090325;
   --color-white-100: #f3f3f3;
 
-  --shadow-card: 0px 35px 120px -15px #211e35;
+  --shadow-card: 0px 8px 120px -15px #804dee35;
 
   --breakpoint-xs: 553px;
   --breakpoint-smd: 800px;
@@ -56,6 +56,14 @@
     #804dee 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+.violet-text-gradient {
+  background: #804dee;
+  background: linear-gradient(90.13deg, #804dee 1.9%, #08010c 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #804dee 1.9%, #08010c 97.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 

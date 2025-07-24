@@ -89,7 +89,7 @@ function Contact() {
 
         <div className="mt-4 flex flex-col gap-2 items-left">
 
-          <div className='cursor-pointer hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
+          <div className='cursor-pointer shadow-card hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -105,7 +105,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className='cursor-pointer hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
+          <div className='cursor-pointer shadow-card hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -121,7 +121,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className='cursor-pointer hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
+          <div className='cursor-pointer shadow-card hover:bg-white hover:text-black transition-all duration-300 rounded-4xl border-1 border-white px-6 py-2 flex flex-row items-center gap-4 w-full'>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -141,10 +141,10 @@ function Contact() {
 
       </motion.div>
 
-      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-20 overflow-hidden xl:justify-center'>
+      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-20 xl:justify-center'>
         <motion.div
           variants={slideIn('left', 'tween', 0.2, 1)}
-          className='border-b-2 border-secondary xl:flex-1 bg-black-100 p-8 rounded-2xl'>
+          className='border-b-2 shadow-card border-secondary xl:flex-1 bg-black-100 p-8 rounded-2xl'>
 
           <div className="flex gap-4 items-center">
             <p className="font-bold text-white text-[20px]">

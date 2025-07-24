@@ -19,12 +19,12 @@ function ProjectCard(props) {
             speed: 450
           }
         }
-        className='border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[370px] w-full'>
+        className='shadow-card border-r-2 border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[370px] w-full'>
         <div className='rounded-2xl relative w-full h-[230px]'>
           <img
             src={props.image}
             alt={props.name}
-            className='p-1 border-2 border-secondary w-full h-full object-fill object-center rounded-2xl' />
+            className='w-full h-full object-fill object-center rounded-2xl' />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div

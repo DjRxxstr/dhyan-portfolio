@@ -14,7 +14,9 @@ function Resume() {
                 </p>
             </motion.div>
 
-            <motion.div variants={fadeIn("", "", 0.1, 1)}>
+            <motion.div 
+                variants={fadeIn("", "", 0.1, 1)}
+                className="shadow-card rounded-4xl">
                 <a 
                   href="https://drive.google.com/file/d/1W4hqg0hBNOVt1kK9LHrwhsWzadr4INPk/view?usp=sharing"
                   target="_blank">

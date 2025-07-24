@@ -15,7 +15,7 @@ function ServiceCard({ index, type, name, duration, icon, details }) {
         variants={
           fadeIn("right", "spring", 0.5 * index, 0.75)
         }
-        className='h-full w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+        className='h-full w-full bg-secondary pb-[2px] rounded-[20px] shadow-card'>
 
         <div
           options={
@@ -28,7 +28,7 @@ function ServiceCard({ index, type, name, duration, icon, details }) {
           className='bg-tertiary rounded-[20px] py-8 px-8 
             min-h-[280px] flex items-start flex-col w-full h-full'>
 
-              <div className="green-pink-text-gradient font-extrabold text-[20px]">
+              <div className="text-secondary font-bold text-[20px]">
                 {type}
               </div>
 
@@ -46,10 +46,10 @@ function ServiceCard({ index, type, name, duration, icon, details }) {
 
           </div>
 
-          <div className='green-pink-gradient h-[2px] mt-5 w-full'></div>
+          <div className='bg-secondary h-[2px] mt-5 w-full'></div>
 
           <div 
-            className="green-pink-gradient font-bold text-white text-[15px] rounded-2xl py-1 px-3 mt-4">
+            className="border-1 border-secondary font-bold text-secondary text-[15px] rounded-2xl py-1 px-3 mt-4">
             {duration}
           </div>
 
