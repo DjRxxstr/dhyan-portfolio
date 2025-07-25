@@ -24,7 +24,7 @@ export default function Hero() {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915eff]'>Dhyan</span></h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>
-            I'm a 
+            I'm a
             <span>
               <Typewriter
                 words={[' React Developer', ' Web Developer']}
@@ -33,7 +33,7 @@ export default function Hero() {
                 cursorStyle="|"
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={2000}/>
+                delaySpeed={2000} />
             </span>
           </p>
 
@@ -41,11 +41,29 @@ export default function Hero() {
             className='mt-[35px] flex h-[40px]'>
             <a
               href="#contact">
-              <button
-                className="cursor-pointer w-[140px] bg-[#7645e0] text-white px-4 py-2 rounded-2xl shadow-md transition-all duration-300 hover:bg-amber-50 hover:text-[#7645e0] hover:shadow-lg"
+              <motion.button
+                whileHover={
+                  {
+                    scale: 1.1,
+                  }
+                }
+                whileTap={
+                  {
+                    scale: 0.95
+                  }
+                }
+                transition={
+                  {
+                    type: 'spring',
+                    stiffness: 500,
+                    duration: 0.2
+                  }
+                }
+                className="cursor-pointer w-[140px] bg-[#7645e0] text-white px-4 py-2 rounded-2xl shadow-md 
+                hover:bg-amber-50 hover:text-[#7645e0]"
               >
                 Contact Me!
-              </button>
+              </motion.button>
             </a>
 
           </motion.div>

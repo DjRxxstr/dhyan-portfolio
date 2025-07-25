@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [active, setActive] = useState("");
@@ -88,14 +89,22 @@ export default function Navbar() {
       <div className='smd:flex hidden items-center gap-8'>
         <ul className='list-none flex flex-row items-center gap-8'>
           {navLinks.map((link) => (
-            <li
+            <motion.li
+              layout
               key={link.id}
-              className={`${active === link.title ? "text-white underline decoration-2 underline-offset-4" : "text-secondary"
+              className={`${active === link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] transition-all duration-300 font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
-            </li>
+              {active === link.title && (
+                <motion.div 
+                  layoutId="underline"
+                  className="bg-white h-[3px] w-full">
+                  
+                </motion.div>
+                )}
+            </motion.li>
           ))}
         </ul>
 
