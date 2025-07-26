@@ -146,7 +146,7 @@ function Contact() {
           variants={slideIn('left', 'tween', 0.2, 1)}
           className='border-b-2 shadow-card border-secondary xl:flex-1 bg-black-100 p-8 rounded-2xl'>
 
-          <div className="flex gap-4 items-center">
+          <div className="flex w-full gap-4 items-center">
             <p className="font-bold text-white text-[20px]">
               Send a message
             </p>

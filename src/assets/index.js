@@ -24,6 +24,7 @@ import springboot from "./tech/springboot.png";
 import jwt from "./tech/jwt.svg";
 import framer from "./tech/framer.svg";
 import mysql from "./tech/mysql.svg";
+import typescript from "./tech/typescript.png";
 
 
 import bolt from "./company/bolt.jpeg";
@@ -59,6 +60,7 @@ export {
   jwt,
   framer,
   mysql,
+  typescript,
   college,
   school
 };

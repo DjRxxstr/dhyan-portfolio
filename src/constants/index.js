@@ -18,6 +18,7 @@ import {
   bootstrap,
   framer,
   tanstack,
+  typescript,
 
   fooddelivery,
   busbooking,
@@ -118,6 +119,11 @@ const technologies = [
   {
     name: "Framer Motion",
     icon: framer
+  },
+
+  {
+    name: "TypeScript",
+    icon: typescript
   },
   
   {
