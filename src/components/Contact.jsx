@@ -2,8 +2,6 @@ import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
-
-
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
@@ -141,7 +139,7 @@ function Contact() {
 
       </motion.div>
 
-      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-20 xl:justify-center'>
+      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex xl:w-full gap-20 xl:justify-center'>
         <motion.div
           variants={slideIn('left', 'tween', 0.2, 1)}
           className='border-b-2 shadow-card border-secondary xl:flex-1 bg-black-100 p-8 rounded-2xl'>

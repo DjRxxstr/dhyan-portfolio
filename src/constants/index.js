@@ -126,10 +126,10 @@ const technologies = [
     icon: typescript
   },
   
-  {
-    name: 'Tanstack Query',
-    icon: tanstack
-  },
+  // {
+  //   name: 'Tanstack Query',
+  //   icon: tanstack
+  // },
 
 ];
 

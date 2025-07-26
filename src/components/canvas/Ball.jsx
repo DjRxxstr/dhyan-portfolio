@@ -1,8 +1,11 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import React, { Suspense, useState, useRef } from 'react'
 import Loader from '../Loader';
-import { Billboard, Decal, Float, OrbitControls, useTexture } from '@react-three/drei';
-import { Text } from '@react-three/drei';
+import { 
+  Decal, 
+  Float, 
+  OrbitControls, 
+  useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 
 function Ball({image}) {
@@ -49,10 +52,11 @@ function Ball({image}) {
   )
 }
 
+
 export default function BallCanvas({ icon }) {
   return (
     <Canvas
-      frameloop='always'
+      frameloop='demand'
       gl={{preserveDrawingBuffer: true}}
       camera={{ position: [0, 0, 5], fov: 85 }}>
         <Suspense fallback={<Loader/>}>
@@ -64,3 +68,4 @@ export default function BallCanvas({ icon }) {
     </Canvas>
   );
 }
+

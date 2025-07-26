@@ -8,14 +8,14 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { pic } from '../assets';
 
-function ServiceCard({ index, type, name, duration, icon, details }) {
+function EducationCard({ index, type, name, duration, icon, details }) {
   return (
     <Tilt className='xs:w-[333px] w-full'>
       <motion.div
         variants={
           fadeIn("right", "spring", 0.5 * index, 0.75)
         }
-        className='h-full w-full bg-secondary pb-[2px] rounded-[20px] shadow-card'>
+        className='h-full w-full bg-secondary pb-[2px] pr-[2px] rounded-[20px] shadow-card'>
 
         <div
           options={
@@ -93,7 +93,7 @@ function About() {
           <p className={styles.sectionSubText}>Education</p>
           <div className='flex flex-wrap w-full gap-10 justify-center'>
             {education.map((record, index) => (
-              <ServiceCard key={record.type} index={index} {...record} />
+              <EducationCard key={record.type} index={index} {...record} />
             ))}
           </div>
         </div>

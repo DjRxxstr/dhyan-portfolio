@@ -5,9 +5,9 @@ import { ComputersCanvas } from './canvas';
 import { textVariant, fadeIn } from '../utils/motion';
 import { Typewriter } from 'react-simple-typewriter';
 
-export default function Hero() {
+export default function Preview() {
   return (
-    <section className='relative w-full h-screen mx-auto hero-section bg-tertiary'>
+    <section className='relative h-screen mx-auto hero-section bg-tertiary'>
       <div className={
         `${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`
       }>
