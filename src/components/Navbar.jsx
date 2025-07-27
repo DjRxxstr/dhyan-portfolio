@@ -80,9 +80,27 @@ export default function Navbar() {
             window.scrollTo(0, 0);
           }}>
           <img src={logo} alt="logo" className='w-9 h-9 object-contain' />
-          <p className='text-white text-[25px] ml-2 font-bold cursor-pointer'>
+          <motion.p 
+            whileHover={
+                  {
+                    scale: 1.05,
+                  }
+                }
+                whileTap={
+                  {
+                    scale: 0.95
+                  }
+                }
+                transition={
+                  {
+                    type: 'tween',
+                    stiffness: 500,
+                    duration: 0.2
+                  }
+                }
+            className='text-white text-[25px] ml-2 font-bold cursor-pointer'>
             Dhyan Jiju
-          </p>
+          </motion.p>
         </Link>
       </div>
 

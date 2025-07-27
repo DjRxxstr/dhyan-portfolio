@@ -56,7 +56,7 @@ function Ball({image}) {
 export default function BallCanvas({ icon }) {
   return (
     <Canvas
-      frameloop='demand'
+      frameloop='always'
       gl={{preserveDrawingBuffer: true}}
       camera={{ position: [0, 0, 5], fov: 85 }}>
         <Suspense fallback={<Loader/>}>
