@@ -19,7 +19,7 @@ function ProjectCard(props) {
             speed: 450
           }
         }
-        className='shadow-card border-r-2 border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[370px] w-full'>
+        className='flex flex-col justify-between shadow-card border-r-2 border-b-2 border-secondary bg-tertiary p-3 rounded-2xl xs:w-[380px] w-full h-full'>
         <div className='rounded-2xl relative w-full h-[230px]'>
           <img
             src={props.image}

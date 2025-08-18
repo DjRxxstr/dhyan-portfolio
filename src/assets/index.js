@@ -19,12 +19,16 @@ import threejs from "./tech/threejs.svg";
 import tanstack from "./tech/tanstack.png";
 import firebase from "./tech/firebase.png";
 import next from "./tech/next.svg";
+import nextjs from "./tech/nextjs.jpeg";
 import bootstrap from "./tech/bootstrap.png";
 import springboot from "./tech/springboot.png";
 import jwt from "./tech/jwt.svg";
 import framer from "./tech/framer.svg";
 import mysql from "./tech/mysql.svg";
 import typescript from "./tech/typescript.png";
+import supabase from "./tech/supabase.jpg";
+import clerk from "./tech/clerk.png";
+import vapi from "./tech/vapi.png";
 
 
 import bolt from "./company/bolt.jpeg";
@@ -33,6 +37,7 @@ import beachhack from "./company/beachhack.jpg";
 
 import fooddelivery from "./projects/project1.JPG";
 import busbooking from "./projects/project2.JPG";
+import lmssaas from "./projects/project3.JPG";
 
 export {
   logo,
@@ -62,5 +67,10 @@ export {
   mysql,
   typescript,
   college,
-  school
+  school,
+  lmssaas,
+  nextjs,
+  supabase,
+  clerk,
+  vapi
 };

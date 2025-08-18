@@ -22,10 +22,15 @@ import {
 
   fooddelivery,
   busbooking,
+  lmssaas,
 
   springboot,
   mysql,
   jwt,
+  nextjs,
+  supabase,
+  clerk,
+  vapi
   
 } from "../assets";
 
@@ -223,6 +228,45 @@ const projects = [
       }
     ],
     image: busbooking,
+    source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
+    live_link: "https://bus-booking-system-eta.vercel.app/"
+  },
+
+  {
+    name: "SaaS - Learning Management System",
+    description:
+      "AI-guided learning platform using Next.js, React, TypeScript, and Tailwind CSS with Clerk and Supabase for secure auth and data. Delivered bite-sized sessions, seamless progress tracking, and intelligent search with filtering and session history to accelerate learning. Drove user retention and growth through plan-based upgrades, all within a polished, scalable experience.",
+    tags: [
+      {
+        name: 'Next',
+        icon: nextjs
+      },
+      {
+        name: "React",
+        icon: reactjs
+      },
+      {
+        name: "Tailwind",
+        icon: tailwind
+      },
+      {
+        name: "Typescript",
+        icon: typescript
+      },
+      {
+        name: "Supabase",
+        icon: supabase
+      },
+      {
+        name: "Clerk",
+        icon: clerk
+      },
+      {
+        name: "Vapi",
+        icon: vapi
+      }
+    ],
+    image: lmssaas,
     source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
     live_link: "https://bus-booking-system-eta.vercel.app/"
   },
