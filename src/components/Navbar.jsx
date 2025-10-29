@@ -6,6 +6,8 @@ import { logo, menu, close } from '../assets';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
+import { resumeLink } from '../constants';
+
 export default function Navbar() {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -26,7 +28,7 @@ export default function Navbar() {
 
         <div className='flex items-center gap-6'>
           <a
-            href="https://drive.google.com/file/d/1W4hqg0hBNOVt1kK9LHrwhsWzadr4INPk/view?usp=sharing"
+            href={resumeLink}
             target="_blank"
             className="text-secondary hover:text-white text-[18px] transition-all duration-300 font-medium cursor-pointer"
           >
@@ -162,7 +164,7 @@ export default function Navbar() {
                     duration: 0.2
                   }
                 }
-            href="https://drive.google.com/file/d/1W4hqg0hBNOVt1kK9LHrwhsWzadr4INPk/view?usp=sharing"
+            href={resumeLink}
             target="_blank"
             className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
           >

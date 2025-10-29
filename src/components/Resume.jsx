@@ -4,6 +4,8 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 
+import { resumeLink } from '../constants';
+
 function Resume() {
     return (
         <div className="flex flex-col gap-10 items-center">
@@ -18,7 +20,7 @@ function Resume() {
                 variants={fadeIn("", "", 0.1, 1)}
                 className="shadow-card rounded-4xl">
                 <a
-                    href="https://drive.google.com/file/d/1W4hqg0hBNOVt1kK9LHrwhsWzadr4INPk/view?usp=sharing"
+                    href={resumeLink}
                     target="_blank">
                     <motion.button
                         whileHover={

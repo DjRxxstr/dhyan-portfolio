@@ -176,63 +176,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Food Delivery App",
-    description:
-      "Developed CraveCart, a full-stack food delivery web application using React.js, Redux and Firebase. Implemented dynamic meal listings, real-time cart synchronization, and order management. Handled order and cart operations via Firebase’s real-time backend services.",
-    tags: [
-      {
-        name: "React",
-        icon: reactjs
-      },
-      {
-        name: "Redux",
-        icon: redux
-      },
-      {
-        name: "CSS",
-        icon: css
-      },
-      {
-        name: "Firebase",
-        icon: firebase
-      },
-    ],
-    image: fooddelivery,
-    source_code_link: "https://github.com/DjRxxstr/food-delivery-app",
-    live_link: "https://food-delivery-app-five-alpha.vercel.app/"
-  },
-  {
-    name: "Bus Booking System",
-    description:
-      "Developed a full-stack bus booking app using React.js, Spring Boot, and MySQL with real-time seat selection and booking. JWT-based authentication, role-based access control, and integrated payment processing. Admin dashboard for managing routes, bookings, users, and viewing real-time analytics.",
-    tags: [
-      {
-        name: "React",
-        icon: reactjs
-      },
-      {
-        name: "Springboot",
-        icon: springboot
-      },
-      {
-        name: "CSS",
-        icon: css
-      },
-      {
-        name: "MySQL",
-        icon: mysql
-      },
-      {
-        name: "JWT-Token",
-        icon: jwt
-      }
-    ],
-    image: busbooking,
-    source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
-    live_link: "https://bus-booking-system-eta.vercel.app/"
-  },
-
-  {
     name: "SaaS - Learning Management System",
     description:
       "AI-guided learning platform using Next.js, React, TypeScript, and Tailwind CSS with Clerk and Supabase for secure auth and data. Delivered bite-sized sessions, seamless progress tracking, and intelligent search with filtering and session history to accelerate learning. Drove user retention and growth through plan-based upgrades, all within a polished, scalable experience.",
@@ -270,6 +213,66 @@ const projects = [
     source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
     live_link: "https://bus-booking-system-eta.vercel.app/"
   },
+
+  {
+    name: "Bus Booking System",
+    description:
+      "Developed a full-stack bus booking app using React.js, Spring Boot, and MySQL with real-time seat selection and booking. JWT-based authentication, role-based access control, and integrated payment processing. Admin dashboard for managing routes, bookings, users, and viewing real-time analytics.",
+    tags: [
+      {
+        name: "React",
+        icon: reactjs
+      },
+      {
+        name: "Springboot",
+        icon: springboot
+      },
+      {
+        name: "CSS",
+        icon: css
+      },
+      {
+        name: "MySQL",
+        icon: mysql
+      },
+      {
+        name: "JWT-Token",
+        icon: jwt
+      }
+    ],
+    image: busbooking,
+    source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
+    live_link: "https://bus-booking-system-eta.vercel.app/"
+  },
+
+  {
+    name: "Food Delivery App",
+    description:
+      "Developed CraveCart, a full-stack food delivery web application using React.js, Redux and Firebase. Implemented dynamic meal listings, real-time cart synchronization, and order management. Handled order and cart operations via Firebase’s real-time backend services.",
+    tags: [
+      {
+        name: "React",
+        icon: reactjs
+      },
+      {
+        name: "Redux",
+        icon: redux
+      },
+      {
+        name: "CSS",
+        icon: css
+      },
+      {
+        name: "Firebase",
+        icon: firebase
+      },
+    ],
+    image: fooddelivery,
+    source_code_link: "https://github.com/DjRxxstr/food-delivery-app",
+    live_link: "https://food-delivery-app-five-alpha.vercel.app/"
+  },
 ];
 
-export { education, technologies, experiences, testimonials, projects };
+const resumeLink = "https://drive.google.com/file/d/1jnHvv8sDfVkD18NYIV4hSlD625veK4ct/view?usp=drive_link";
+
+export { education, technologies, experiences, testimonials, projects, resumeLink };
