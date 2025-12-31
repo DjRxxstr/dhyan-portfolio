@@ -33,11 +33,13 @@ import vapi from "./tech/vapi.png";
 
 import bolt from "./company/bolt.jpeg";
 import beachhack from "./company/beachhack.jpg";
+import techleticslogo from "./company/techleticslogo.svg";
 
 
 import fooddelivery from "./projects/project1.JPG";
 import busbooking from "./projects/project2.JPG";
-import lmssaas from "./projects/project3.JPG";
+import techletics from "./projects/project3.JPG";
+import lmssaas from "./projects/project4.JPG";
 
 export {
   logo,
@@ -72,5 +74,7 @@ export {
   nextjs,
   supabase,
   clerk,
-  vapi
+  vapi,
+  techletics,
+  techleticslogo
 };

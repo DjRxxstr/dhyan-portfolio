@@ -23,6 +23,7 @@ import {
   fooddelivery,
   busbooking,
   lmssaas,
+  techletics,
 
   springboot,
   mysql,
@@ -30,7 +31,8 @@ import {
   nextjs,
   supabase,
   clerk,
-  vapi
+  vapi,
+  techleticslogo
   
 } from "../assets";
 
@@ -143,7 +145,7 @@ const experiences = [
     title: "Artificial Intelligence Intern",
     company_name: "Bolt IoT Inventrom Private Limited",
     icon: bolt,
-    iconBg: "white",
+    iconBg: "black",
     date: "Jan 2025 - Feb 2025",
     points: [
       "Built two AI-integrated web applications by connecting frontend logic with external APIs.",
@@ -155,7 +157,7 @@ const experiences = [
     title: "Event Co-ordinator",
     company_name: "Beach Hack",
     icon: beachhack,
-    iconBg: "white",
+    iconBg: "black",
     date: "Feb 2025",
     points: [
       "Organized a football-themed auction event as part of a tech fest, inspired by the UEFA Champions League.",
@@ -163,6 +165,18 @@ const experiences = [
       "Handled live participant engagement, issue resolution, and overall event flow alongside a small team."
     ],
   },
+  {
+  title: "Frontend Developer",
+  company_name: "Techletics ’26 – College Tech Fest",
+  icon: techleticslogo,
+  iconBg: "black",
+  date: "Sep 2025 - Dec 2025",
+  points: [
+    "Developed the frontend of the official college tech fest website using Next.js and React.",
+    "Built responsive UI components for event listings, schedules, and announcements.",
+    "Worked with the organizing team to update content and deploy frontend changes."
+  ],
+},
 ];
 
 const testimonials = [
@@ -244,6 +258,36 @@ const projects = [
     source_code_link: "https://github.com/DjRxxstr/bus-booking-system",
     live_link: "https://bus-booking-system-eta.vercel.app/"
   },
+  {
+  name: "Techletics ’26 – College Tech Fest Website",
+  description:
+    "Frontend Lead for the official Techletics ’26 college tech fest website. Built using Next.js and React with a focus on responsive design, clean component structure, and reliable deployment. The site served as the primary platform for event information and updates.",
+  tags: [
+    {
+      name: "Next",
+      icon: nextjs
+    },
+    {
+      name: "React",
+      icon: reactjs
+    },
+    {
+      name: "Tailwind",
+      icon: tailwind
+    },
+    {
+      name: "JavaScript",
+      icon: javascript
+    },
+    {
+      name: "Git",
+      icon: git
+    }
+  ],
+  image: techletics,
+  source_code_link: "",
+  live_link: "https://techletics25.vercel.app/"
+},
 
   {
     name: "Food Delivery App",
