@@ -34,6 +34,7 @@ import vapi from "./tech/vapi.png";
 import bolt from "./company/bolt.jpeg";
 import beachhack from "./company/beachhack.jpg";
 import techleticslogo from "./company/techleticslogo.svg";
+import upsmartLogo from "./company/upsmartLogo.jpeg";
 
 
 import fooddelivery from "./projects/project1.JPG";
@@ -76,5 +77,6 @@ export {
   clerk,
   vapi,
   techletics,
-  techleticslogo
+  techleticslogo,
+  upsmartLogo
 };
