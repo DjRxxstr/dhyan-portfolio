@@ -4,6 +4,8 @@ import {
 
   bolt,
   beachhack,
+  techleticslogo,
+  upsmartLogo,
   
   reactjs,
   redux,
@@ -17,7 +19,6 @@ import {
   javascript,
   bootstrap,
   framer,
-  tanstack,
   typescript,
 
   fooddelivery,
@@ -32,7 +33,6 @@ import {
   supabase,
   clerk,
   vapi,
-  techleticslogo
   
 } from "../assets";
 
@@ -166,17 +166,31 @@ const experiences = [
     ],
   },
   {
-  title: "Frontend Developer",
-  company_name: "Techletics ’26 – College Tech Fest",
-  icon: techleticslogo,
-  iconBg: "black",
-  date: "Sep 2025 - Dec 2025",
-  points: [
-    "Developed the frontend of the official college tech fest website using Next.js and React.",
-    "Built responsive UI components for event listings, schedules, and announcements.",
-    "Worked with the organizing team to update content and deploy frontend changes."
-  ],
-},
+    title: "Frontend Developer",
+    company_name: "Techletics ’26 – College Tech Fest",
+    icon: techleticslogo,
+    iconBg: "black",
+    date: "Sep 2025 - Dec 2025",
+    points: [
+      "Developed the frontend of the official college tech fest website using Next.js and React.",
+      "Built responsive UI components for event listings, schedules, and announcements.",
+      "Worked with the organizing team to update content and deploy frontend changes."
+    ],
+  },
+  {
+    title: "Software Development Intern",
+    company_name: "UpSmart Solutions",
+    icon: upsmartLogo,
+    iconBg: "black",
+    date: "Dec 2025 - Feb 2026",
+    points: [
+      "Migrated legacy CodeIgniter modules to Laravel, converting controllers, models, and views into structured Laravel architecture.",
+      "Rebuilt multiple admin modules including Venue, Shops, Sports, Refer-a-Friend, Notifications, Settings, and Coupons using Laravel Blade and Eloquent ORM.",
+      "Converted and integrated REST-style APIs into Laravel Controllers and Services, ensuring seamless UI–API communication.",
+      "Implemented dynamic UI features using AJAX, DataTables, and jQuery for real-time updates and interactive admin dashboards.",
+      "Handled authentication middleware, role-based permission checks, and database relationship mapping during migration.",
+      ],
+  },
 ];
 
 const testimonials = [
